@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
      <title>Trabaja cn - Marmori Est.</title>
     <?php

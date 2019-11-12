@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <title>Marmori Estacionamientos</title>
    <?php

@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
    
     <title>Registro Ok - Marmori Est.</title>
