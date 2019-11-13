@@ -7,7 +7,7 @@ session_start();
   <head>
     <title>Ingreso - Marmori Est.</title>
     <?php
-        include "../componentes/head.php";
+        include "./componentes/head.php";
     ?>
 
   </head>
@@ -16,7 +16,7 @@ session_start();
 
     <header>
       <?php
-        include "../componentes/menu.php";
+        include "./componentes/menu.php";
       ?>
     </header>
 
