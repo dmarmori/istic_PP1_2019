@@ -9,7 +9,6 @@ session_start();
         include "componentes/head.php";
     ?>
     
-
   </head>
 
   <body>
