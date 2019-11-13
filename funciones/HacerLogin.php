@@ -24,7 +24,7 @@
 					{
 					
 						//header("Location: page/nok.php");
-						header("Location: ../paginas/login.php?errorClave");
+						header("Location: ../paginas/Login.php?errorClave");
 						exit();
 					}
 				}
@@ -32,7 +32,7 @@
 			}
 		
 
-		header("Location: ../paginas/login.php?errorUsuario");
+		header("Location: ../paginas/Login.php?errorUsuario");
 		exit();
 		
 	

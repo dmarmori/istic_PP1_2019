@@ -41,37 +41,37 @@ session_start();
             ?>
 
             <form class="form-signin" action="../funciones/HacerLogin.php">
-              <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
+                <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
 
-              <label for="uname" class="sr-only">Usuario</label>
-              <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus>
+                <label for="uname" class="sr-only">Usuario</label>
+                <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus>
 
-              <label for="psw" class="sr-only">Clave</label>
-              <input type="password" id="psw" name="Clave" class="form-control" placeholder="clave" required>
+                <label for="psw" class="sr-only">Clave</label>
+                <input type="password" id="psw" name="Clave" class="form-control" placeholder="clave" required>
 
-              <div class="checkbox mb-3">
-              <label>
-              <input type="checkbox" value="remember-me"> Recordarme
-              </label>
-              </div>
-              <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
-              <?php
-                if (isset($_GET['errorClave']))
-                {
-                  echo '<p style="color:red">La contraseña es incorrecta</p>';
-                  echo '<p>Vuelva a intentarlo o pongase en contacto con el administrador</p>';
+                <div class="checkbox mb-3">
+                <label>
+                <input type="checkbox" value="remember-me"> Recordarme
+                </label>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                <?php
+                  if (isset($_GET['errorClave']))
+                  {
+                    echo '<p style="color:red">La contraseña es incorrecta</p>';
+                    echo '<p>Vuelva a intentarlo o pongase en contacto con el administrador</p>';
+                  }
+                  else if (isset($_GET['errorUsuario']))
+                  {
+                    echo '<p style="color:red">No pudimos encontrar su cuenta</p>';
+                    echo '<p>Pongase en contacto con el administrador</p>';
+                  }
+                ?>
+                <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
+            
+                <?php 
                 }
-                else if (isset($_GET['errorUsuario']))
-                {
-                  echo '<p style="color:red">No pudimos encontrar su cuenta</p>';
-                  echo '<p>Pongase en contacto con el administrador</p>';
-                }
-              ?>
-              <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
-          
-              <?php 
-              }
-              ?>
+                ?>
       
           </form>
     </main>
