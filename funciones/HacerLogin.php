@@ -17,7 +17,7 @@
 		
 						$_SESSION['Usuario']=$usuario["nombre"];
 						$_SESSION['Perfil']=$usuario["tipoUsuario"];
-						header("Location: /page/ok.php");
+						header("Location: funciones/page/ok.php");
 						exit();
 					}
 					else
