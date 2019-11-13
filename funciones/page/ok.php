@@ -19,7 +19,7 @@ session_start();
     <header>
        
       <?php
-        include "../../componentes/menu.php";
+        include "/istic_PP1_2019/componentes/menu.php";
       ?>
 
     </header>
