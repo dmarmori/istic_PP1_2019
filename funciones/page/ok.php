@@ -8,7 +8,7 @@ session_start();
    
     <title>Ok - Marmori Est.</title>
     <?php
-        include "../../componentes/head.php";
+        include "../../../componentes/head.php";
     ?>
     
   </head>
@@ -19,7 +19,7 @@ session_start();
     <header>
        
       <?php
-        include "/istic_PP1_2019/componentes/menu.php";
+        include "../../componentes/menu.php";
       ?>
 
     </header>
