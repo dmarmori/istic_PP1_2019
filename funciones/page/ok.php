@@ -8,7 +8,7 @@ session_start();
    
     <title>Ok - Marmori Est.</title>
     <?php
-        include "../../../componentes/head.php";
+        include "../../componentes/head.php";
     ?>
     
   </head>
