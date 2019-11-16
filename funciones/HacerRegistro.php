@@ -23,7 +23,7 @@ $miobjeto->Clave=$_GET['Clave'];
 $miobjeto->Tusuario= $Tusuario;
 
 $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-$select="INSERT INTO usuario (nombre, clave, tipoUsuario) VALUES ('$miobjeto->Usuario','$miobjeto->Clave','$miobjeto->Tusuario')";
+$select="INSERT INTO Usuarios (nombre, clave, tipoUsuario) VALUES ('$miobjeto->Usuario','$miobjeto->Clave','$miobjeto->Tusuario')";
 $consulta =$objetoAccesoDato->RetornarConsulta($select);
 $consulta->execute();
 

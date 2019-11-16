@@ -4,7 +4,7 @@
 
 
 		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-		$consulta =$objetoAccesoDato->RetornarConsulta("select nombre,clave,tipoUsuario from usuario");
+		$consulta =$objetoAccesoDato->RetornarConsulta("select nombre,clave,tipoUsuario from Usuarios");
 		$consulta->execute();
 		$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
 
