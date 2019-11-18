@@ -13,7 +13,7 @@ session_start();
     
   </head>
 
-  <body>
+  <body background="../../img/Fondo.png">
         
 
     <header>
@@ -27,16 +27,18 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
+
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
+
       <center>
-      <h1 class="mt-5"style="color:green";><em>BIENVENIDO</em></h1>
+      <h1 class="mt-5"style="color:yellow";><em>BIENVENIDO</em></h1>
       </center>
 
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
-     <p class="lead"><h2>Primer sistema de estacionamiento con cobro digital</h2></p>
-     <p><h4>"El arte de estacionar"</h4></p>
+     <p class="lead"><h2 style="color: white">Primer sistema de estacionamiento con cobro digital</h2></p>
+     <p><h4 style="color: white">"El arte de estacionar"</h4></p>
 
      <center>
-      <h1 class="mt-5"style="color:green";><em>
+      <h1 class="mt-5"style="color:yellow";><em>
         <?php 
             echo  "Usuario: ".$_SESSION['Usuario']." / "."Tipo de perfil: ".$_SESSION['Perfil']          
         ?>

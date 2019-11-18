@@ -29,13 +29,13 @@
               <a class="nav-link" href="../paginas/Vehiculo.php">IngresaVehiculo</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:red"; class="nav-link" href="../paginas/Facturar.php">$Facturar</a>
+              <a  style="color:yellow"; class="nav-link" href="../paginas/Facturar.php">$Facturar</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:green"; class="nav-link" href="ListaUsuario.php">Lista Users</a>
+              <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
             </li>
             <li class="nav-item active">
-              <a style="color:green"; class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
+              <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
             </li>
 
             <?php
@@ -52,10 +52,10 @@
               <a class="nav-link" href="../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a  style="color:blue"; class="nav-link" href="HistoricoFacturado.php"> Historico Users</a>
+              <a class="nav-link" href="HistoricoFacturado.php"> Historico Users</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:blue"; class="nav-link" href="HistoricoEmpleados.php"> Historico Facturados</a>
+              <a class="nav-link" href="HistoricoEmpleados.php"> Historico Facturados</a>
             </li>
 
             <?php
@@ -88,7 +88,7 @@
               ?>
 
             aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Salir</button>
+            <button class="btn btn-warning my-2 my-sm-0" type="submit">Salir</button>
           </form>
         </div>
       </nav>
