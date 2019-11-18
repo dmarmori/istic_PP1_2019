@@ -8,30 +8,24 @@
     
   </head>
 
-  <body>
+  <body background="../img/Fondo.png">
 
     <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-        </div>
-      </nav>
+    
     </header>
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
-      <p class="lead"><h2>Envianos tu cv a: Marmori@estacionamientos.com.ar</h2></p>
-    </main>
-    <center>
-     <img src="../img/TrabajaCN.png"height=350” width=1000”>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
+      <p class="lead"><h3 style="color:hsl(40,100%,50%); padding-top: 90px">Envianos tu cv a: Marmori@estacionamientos.com.ar</h3></p>
+      <p><h4 style="color:hsl(50,70%,50%);">"El arte de estacionar"</h4></p>
+
+      <center>
+     <img src="../img/TrabajaCN.png"height=200” width=500”>
      </center>
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">"El arte de estacionar"</span>
-      </div>
+
+    <footer>
+
     </footer>
 
     <!-- Bootstrap core JavaScript
