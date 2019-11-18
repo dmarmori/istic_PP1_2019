@@ -40,7 +40,7 @@ session_start();
             ?>
 
             <form class="form-signin" action="../funciones/HacerLogin.php">
-                <h1 class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
+                <h1 style="color: white" class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
 
                 <label for="uname" class="sr-only">Usuario</label>
                 <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus>
