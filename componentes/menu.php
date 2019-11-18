@@ -1,7 +1,7 @@
 
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <a class="navbar-brand" href="../index.php">Inicio</a>
+        <a class="navbar-brand" href="../../index.php">Inicio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -26,10 +26,10 @@
               //solo muestra el menu si estas con la variable de sesión instaciada
             ?> 
             <li class="nav-item active">
-              <a class="nav-link" href="../paginas/Vehiculo.php">IngresaVehiculo</a>
+              <a class="nav-link" href="../../paginas/Vehiculo.php">IngresaVehiculo</a>
             </li>
             <li class="nav-item active">
-              <a  style="color:yellow"; class="nav-link" href="../paginas/Facturar.php">$Facturar</a>
+              <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
@@ -63,7 +63,7 @@
             ?>
               
             <li class="nav-item active">
-              <a class="nav-link disabled" href="../paginas/MasInfo.php" target="_blank">Mas info</a>
+              <a class="nav-link disabled" href="../../paginas/MasInfo.php" target="_blank">Mas info</a>
             </li>
           </ul>
           <form class="form-inline mt-2 mt-md-0" action="../../funciones/hacerLogout.php">
