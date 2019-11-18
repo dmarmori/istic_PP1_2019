@@ -25,20 +25,6 @@ session_start();
 
       <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 100px"><em>Marmori Estacionamientos SA<em></h1>    
 
-           <?php 
-                  if(isset($_SESSION['Usuario'])){
-                    //solo muestra el menu si estas con la variable de sesión instaciada
-            ?>
-                              <h2 style="color: white">Usted ya esta logeado</h2>
-                              <h3 class="mt-5"style="color:yellow";> 
-                              <?php echo $_SESSION['Usuario']."-".$_SESSION['Perfil'];?>  </h3>
-                             
-            <?php 
-              }
-              else
-              {
-            ?>
-
             <form class="form-signin" action="../funciones/HacerLogin.php">
                 <h1 style="color: white" class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
 
@@ -68,9 +54,6 @@ session_start();
                 ?>
                 <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
             
-                <?php 
-                }
-                ?>
       
           </form>
     </main>
