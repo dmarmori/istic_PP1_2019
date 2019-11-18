@@ -58,8 +58,8 @@ session_start();
                 <?php
                   if (isset($_GET['errorClave']))
                   {
-                    echo '<p style="color:red">La contraseña es incorrecta</p>';
-                    echo '<p>Vuelva a intentarlo o pongase en contacto con el administrador</p>';
+                    echo '<p style="color:yellow">La contraseña es incorrecta</p>';
+                    echo '<p style="color:white">Vuelva a intentarlo o pongase en contacto con el administrador</p>';
                   }
                   else if (isset($_GET['errorUsuario']))
                   {
