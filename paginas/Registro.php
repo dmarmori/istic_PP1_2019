@@ -56,7 +56,7 @@ session_start();
 
     </main>
 
-    <footer class="footer">
+    <footer>
      
     </footer>
 
