@@ -14,13 +14,7 @@
   <body>
 
     <header>
-      <!-- Fixed navbar -->
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto">
-          </ul>
-        </div>
-      </nav>
+     
     </header>
 
     <!-- Begin page content -->
@@ -48,10 +42,9 @@
        <p><H3>ESTAD.12HS. <b>150$</b>...................................ESTAD.24HS. <b>220$</b></H3></p>
        </center>
     </main>
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">"El arte de estacionar"</span>
-      </div>
+
+    <footer>
+     
     </footer>
 
     <!-- Bootstrap core JavaScript
