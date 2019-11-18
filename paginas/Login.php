@@ -63,8 +63,8 @@ session_start();
                   }
                   else if (isset($_GET['errorUsuario']))
                   {
-                    echo '<p style="color:red">No pudimos encontrar su cuenta</p>';
-                    echo '<p style="color:black">Pongase en contacto con el administrador</p>';
+                    echo '<p style="color:yellow">No pudimos encontrar su cuenta</p>';
+                    echo '<p style="color:white">Pongase en contacto con el administrador</p>';
                   }
                 ?>
                 <p class="mt-5 mb-3 text-muted">&copy; 2020-2020</p>
