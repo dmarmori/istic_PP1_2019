@@ -23,7 +23,7 @@ session_start();
     <!-- Begin page content -->
     <main role="main" class="container">
 
-     <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
     
 
            <?php 
