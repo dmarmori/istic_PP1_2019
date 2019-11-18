@@ -23,11 +23,10 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
-      <p class="lead"><h2>Primer sistema de estacionamiento con cobro digital</h2></p>
-      <p><h4>"El arte de estacionar"</h4></p>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
+      <p class="lead"><h3 style="color:hsl(40,100%,50%); padding-top: 90px">Primer sistema de estacionamiento con cobro digital</h3></p>
+      <p><h4 style="color:hsl(50,70%,50%);">"El arte de estacionar"</h4></p>
       
-    
 
       <?php
         include "componentes/pie.php";
