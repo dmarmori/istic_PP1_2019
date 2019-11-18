@@ -12,7 +12,7 @@ session_start();
 
   </head>
 
-  <body>
+  <body background="../img/Fondo.png">
 
     <header>
       <?php
@@ -50,11 +50,11 @@ session_start();
                 <input type="password" id="psw" name="Clave" class="form-control" placeholder="clave" required>
 
                 <div class="checkbox mb-3">
-                <label>
+                <label style="color: yellow">
                 <input type="checkbox" value="remember-me"> Recordarme
                 </label>
                 </div>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                <button class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
                 <?php
                   if (isset($_GET['errorClave']))
                   {
