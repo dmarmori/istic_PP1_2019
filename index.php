@@ -27,9 +27,7 @@ session_start();
       <p class="lead"><h2>Primer sistema de estacionamiento con cobro digital</h2></p>
       <p><h4>"El arte de estacionar"</h4></p>
       
-      <center>
-     <img src="img/estacionamiento.png"height=350” width=1000”>
-     </center>
+    
 
       <?php
         include "componentes/pie.php";
