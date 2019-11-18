@@ -49,7 +49,7 @@
               //solo muestra el menu si estas con la variable de sesión instaciada y sos de perfil admin
             ?>
             <li class="nav-item active">
-              <a class="nav-link" href="../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="../../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="HistoricoFacturado.php"> Historico Users</a>
