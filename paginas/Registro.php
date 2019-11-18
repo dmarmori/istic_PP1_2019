@@ -10,7 +10,7 @@ session_start();
     ?>
   </head>
 
-  <body>
+  <body background="../img/Fondo.png">
 
     <header>
       <?php
@@ -36,7 +36,7 @@ session_start();
             <form action="/marmori/funciones/HacerRegistro.php" class="form-signin">
               <div class="text-center mb-4">
                 <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-                <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+                <h1 class="h3 mb-3 font-weight-normal">Registro de usuario</h1>
               </div> 
                 
                 
@@ -48,7 +48,7 @@ session_start();
                 </select><br /><br>
                 <input  type="password" class="form-control" placeholder="Ingrese Clave " name="Clave" required>
                 <br /><br>
-                <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                <button  class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
               </form> 
         <?php 
           }
