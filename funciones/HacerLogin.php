@@ -4,13 +4,13 @@
 
 
 		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-		$consulta =$objetoAccesoDato->RetornarConsulta("select nombre,clave,tipoUsuario from Usuarios");
+		$consulta =$objetoAccesoDato->RetornarConsulta("select * from Usuarios");
 		$consulta->execute();
 		$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($datos as $usuario) 
 			{
-				if ($usuario["nombre"] == $_GET['Usuario']) 
+				if (($usuario["nombre"] == $_GET['Usuario']) && ($usuario["habilitado"] == "1"))
 				{				 
 					if ($usuario["clave"] == $_GET['Clave'])
 					{
@@ -23,7 +23,6 @@
 					else
 					{
 					
-						//header("Location: page/nok.php");
 						header("Location: ../paginas/Login.php?errorClave");
 						exit();
 					}

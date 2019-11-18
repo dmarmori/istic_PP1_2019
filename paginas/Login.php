@@ -63,7 +63,7 @@ session_start();
                   }
                   else if (isset($_GET['errorUsuario']))
                   {
-                    echo '<p style="color:yellow">No pudimos encontrar su cuenta</p>';
+                    echo '<p style="color:yellow">Cuenta inexistente o inhabilitada</p>';
                     echo '<p style="color:white">Pongase en contacto con el administrador</p>';
                   }
                 ?>
