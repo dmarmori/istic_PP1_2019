@@ -11,7 +11,7 @@ session_start();
     
   </head>
 
-  <body background="img/Fondo.jpg">
+  <body background="img/Fondo.png">
 
 
 
