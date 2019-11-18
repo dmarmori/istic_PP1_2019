@@ -23,15 +23,14 @@ session_start();
     <!-- Begin page content -->
     <main role="main" class="container">
 
-      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
-    
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 100px"><em>Marmori Estacionamientos SA<em></h1>    
 
            <?php 
                   if(isset($_SESSION['Usuario'])){
                     //solo muestra el menu si estas con la variable de sesión instaciada
             ?>
-                              <h2>Usted ya esta logeado</h2>
-                              <h3 class="mt-5"style="color:green";> 
+                              <h2 style="color: white">Usted ya esta logeado</h2>
+                              <h3 class="mt-5"style="color:yellow";> 
                               <?php echo $_SESSION['Usuario']."-".$_SESSION['Perfil'];?>  </h3>
                              
             <?php 
