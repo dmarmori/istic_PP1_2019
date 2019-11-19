@@ -24,6 +24,6 @@ $miobjeto->Tusuario = $Tusuario;
 
 
 
-//header("Location: page/RegistroOk.php");
+header("Location: page/RegistroOk.php");
 
 ?>
