@@ -56,6 +56,8 @@
                 <li class="nav-item active">
                   <a class="nav-link" href="/marmori/paginas/Login.php">Ingresar</a>
                 </li>
+            <?php  
+              }
             ?>
               
                 <li class="nav-item active">
