@@ -27,6 +27,6 @@ $select="INSERT INTO Usuarios (nombre, clave, tipoUsuario, habilitado) VALUES ('
 $consulta =$objetoAccesoDato->RetornarConsulta($select);
 $consulta->execute();
 
-header("Location: page/RegistroOk.php");
+//header("Location: page/RegistroOk.php");
 
 ?>
