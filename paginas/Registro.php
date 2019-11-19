@@ -20,19 +20,7 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <?php 
-          if (isset($SESSION['Usuario'])) 
-          { //solo muestra el menu si estas con la variable de sesión instaciada
-      ?>
-               <h2>Usted ya esta logeado</h2>
-               <h3>  <?php echo $_SESSION['Usuario'];?>  </h3>  
-      <?php
-          }
-          else
-          {  
-      ?>       
-
-      
+     
             <form action="/marmori/funciones/HacerRegistro.php" class="form-signin">
               <div class="text-center mb-4">
                 <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
@@ -50,9 +38,6 @@ session_start();
                 <br /><br>
                 <button  class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
               </form> 
-        <?php 
-          }
-        ?>
 
     </main>
 
