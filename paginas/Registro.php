@@ -37,6 +37,15 @@ session_start();
                 <input  type="password" class="form-control" placeholder="Ingrese Clave " name="Clave" required>
                 <br /><br>
                 <button  class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
+
+                <?php 
+                    if (isset($_GET['usuarioExistente']))
+                    {
+                      echo '<p style="color:yellow">El usuario ya existe</p>';
+                      echo '<p style="color:white">Intente nuevamente con otro</p>';
+                    }
+                  ?>
+                  
               </form> 
 
     </main>

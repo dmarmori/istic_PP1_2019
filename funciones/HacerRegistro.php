@@ -7,6 +7,20 @@ $miobjeto=new stdClass();
 $miobjeto->Usuario=$_GET['Usuario'];
 $miobjeto->Clave=$_GET['Clave'];
 
+	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+	$consulta =$objetoAccesoDato->RetornarConsulta("select nombre from Usuarios");
+	$consulta->execute();			
+	$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);	
+
+	foreach ($datos as $usuario ) 
+	{
+		if ($usuario['nombre'] == $miobjeto->Usuario) 
+		{	
+			header("Location: ../paginas/Registro.php?usuarioExistente=error");
+			exit();
+		}			
+	}
+
 	switch ($_GET['TipoUsuario'])
 	{
 		case '1':
