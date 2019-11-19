@@ -20,7 +20,7 @@ $miobjeto->Clave=$_GET['Clave'];
 			break;
 	}
 
-$miobjeto->Tusuario= $Tusuario;
+$miobjeto->Tusuario = $Tusuario;
 
 $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
 $select="INSERT INTO Usuarios (nombre, clave, tipoUsuario, habilitado) VALUES ('$miobjeto->Usuario','$miobjeto->Clave','$miobjeto->Tusuario','1')";
