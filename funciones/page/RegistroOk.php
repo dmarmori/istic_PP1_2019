@@ -13,7 +13,7 @@ session_start();
 
   </head>
 
-  <body>
+  <body background="../../img/Fondo.png">
 
     <header>
       <?php
@@ -23,10 +23,11 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
+      <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 0px"><em>Marmori Estacionamientos SA<em></h1>
       <center>
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Registro exitoso<em></h1>
-      <img src="/Marmori/img/RegistroOk.png">
-      <h3><a href="/marmori/paginas/Registro.php">Seguir registrando</a></h3>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%);"><em>Registro exitoso<em></h1>
+      <img src="../../img/RegistroOk.png">
+      <h3><a style="color: yellow" href="../../paginas/Registro.php">Seguir registrando</a></h3>
       </center>
     </main>
 
