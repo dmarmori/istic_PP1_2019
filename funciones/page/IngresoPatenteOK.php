@@ -12,7 +12,7 @@ session_start();
 
   </head>
 
-  <body>
+  <body background="../../img/Fondo.png">
 
     <header>
       <?php
@@ -23,9 +23,9 @@ session_start();
     <!-- Begin page content -->
     <main role="main" class="container">
       <center>
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Ingreso de patente exitoso<em></h1>
-      <img src="/Marmori/img/RegistroOk.png">
-      <h3><a href="/marmori/paginas/Vehiculo.php">Seguir ingresando</a></h3>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%);"><em>Ingreso de patente exitoso<em></h1>
+      <img src="../../img/RegistroOk.png">
+      <h3><a href="../../paginas/Vehiculo.php">Seguir ingresando</a></h3>
       </center>
     </main>
 
