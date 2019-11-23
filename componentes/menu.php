@@ -9,57 +9,61 @@
           <ul class="navbar-nav mr-auto">
            
 
-            <?php
-              if(isset($_SESSION['Usuario']))
+          <?php
+              if(isset($_SESSION['Usuario'])&& isset($_SESSION['Perfil']) &&$_SESSION['Perfil']=="empleado")
               {
-              //solo muestra el menu si estas con la variable de sesión instaciada
-            ?> 
-                <li class="nav-item active">
-                  <a class="nav-link" href="../../paginas/Vehiculo.php">IngresaVehiculo</a>
-                </li>
-                <li class="nav-item active">
-                  <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
-                </li>
+                 //solo muestra el menu si estas con la variable de sesión instaciada
+            ?>    
+
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../../paginas/Vehiculo.php">IngresaVehiculo</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
+                  </li>
 
             <?php
               }
-            ?>
 
+                  else if(isset($_SESSION['Usuario']) && isset($_SESSION['Perfil']) &&$_SESSION['Perfil']=="admin")
+                  {
+                    
+                      //solo muestra el menu si estas con la variable de sesión instaciada y sos de perfil admin
+             ?>
 
-            <?php 
-            if(isset($_SESSION['Usuario']) && isset($_SESSION['Perfil']) &&$_SESSION['Perfil']=="admin")
-            {
-              //solo muestra el menu si estas con la variable de sesión instaciada y sos de perfil admin
-            ?>
-                <li class="nav-item active">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../../paginas/Vehiculo.php">IngresaVehiculo</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
+                  </li>
+                  <li class="nav-item active">
                   <a class="nav-link" href="../../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="HistoricoFacturado.php"> Historico Users</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="HistoricoEmpleados.php"> Historico Facturados</a>
-                </li>
-
-            <?php
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="HistoricoEmpleados.php"> Historico Facturados</a>
+                  </li>
+              <?php
               }
               else
               {
             ?>
-            
                 <li class="nav-item active">
                   <a class="nav-link" href="../../paginas/Login.php">Ingresar</a>
                 </li>
+
             <?php  
               }
             ?>
-              
                 <li class="nav-item active">
                   <a class="nav-link disabled" href="../../paginas/MasInfo.php" target="_blank">Mas info</a>
                 </li>
