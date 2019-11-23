@@ -29,7 +29,7 @@ session_start();
                 <h1 style="color: white" class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
 
                 <label for="uname" class="sr-only">Usuario</label>
-                <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus>
+                <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus onchange="javascript:this.value=this.value.toUpperCase();"/>
 
                 <label for="psw" class="sr-only">Clave</label>
                 <input type="password" id="psw" name="Clave" class="form-control" placeholder="clave" required>

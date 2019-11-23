@@ -28,7 +28,7 @@ session_start();
               </div> 
                 
                 
-                <input autocomplete="off" type="text" class="form-control" placeholder="Usuario" name="Usuario" required>
+                <input autocomplete="off" type="text" class="form-control" placeholder="Usuario" name="Usuario" required onchange="javascript:this.value=this.value.toUpperCase();"/>
                 <br /><br>
                 <select name="TipoUsuario">
                   <option value="1">empleado</option>

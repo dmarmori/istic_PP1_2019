@@ -30,7 +30,7 @@ session_start();
                 <!-- <h1> Ingresar Vehiculo<h1> -->
                 <h1 style="color: black" class="h3 mb-5 text-center"> Ingresar Vehiculo<h1>  
                 <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);"> Patente</h2>
-                <input class="form-control" name="Patente" autocomplete="off" class="navbar-brand">
+                <input class="form-control" name="Patente" autocomplete="off" type="text" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
               <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
             </form>
