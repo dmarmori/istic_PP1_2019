@@ -29,7 +29,7 @@ session_start();
               <div class="form-group">
                 <!-- <h1> Ingresar Vehiculo<h1> -->
                 <h1 style="color: black" class="h3 mb-5 text-center"> Ingresar Vehiculo<h1>  
-                <h2 class="mt-5 text-center" style="color:hsl(50,100%,30%);"> Patente</h2>
+                <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);"> Patente</h2>
                 <input class="form-control" name="Patente" autocomplete="off" class="navbar-brand">
               </div>
               <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
