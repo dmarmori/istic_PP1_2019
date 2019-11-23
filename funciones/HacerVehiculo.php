@@ -11,10 +11,10 @@ session_start();
 	$miobjetoVehiculo->Patente = $_GET['Patente'];
 	$miobjetoVehiculo->Horario = $IngresoHora;
 
-	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-	$select="INSERT INTO Vehiculos (patente, horario) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario')";
-	$consulta =$objetoAccesoDato->RetornarConsulta($select);
-	$consulta->execute();
+	// $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+	// $select="INSERT INTO Vehiculos (patente, horario) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario')";
+	// $consulta =$objetoAccesoDato->RetornarConsulta($select);
+	// $consulta->execute();
 
 	
 
