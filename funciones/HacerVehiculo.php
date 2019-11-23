@@ -12,7 +12,7 @@ session_start();
 	$miobjetoVehiculo->Horario = $IngresoHora;
 
 	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-	$select="INSERT INTO vehiculos (patente, horario) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario')";
+	$select="INSERT INTO Vehiculos (patente, horario) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario')";
 	$consulta =$objetoAccesoDato->RetornarConsulta($select);
 	$consulta->execute();
 
