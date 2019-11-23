@@ -9,7 +9,6 @@ session_start();
     <?php
         include "../componentes/head.php";
     ?>
-
   </head>
 
   <body background="../img/Fondo.png">
@@ -22,22 +21,59 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <center>
-      <h1 style="color:red";> Ingresar Vehiculo<h1>
-        
-        <form action="/marmori/funciones/HacerVehiculo.php">
-                Patente:<br>
-                <input autocomplete="off" class="navbar-brand" type="text" name="Patente" value="" required>
-                <br><br>
-                <input class="navbar-brand" type="submit" value="Ingresar">
-          </form> 
-      </center>
+
+        <div class="row justify-content-center">
+          <div class="form-group col-sm-3">
+           
+            <form action="../funciones/HacerVehiculo.php">
+              <div class="form-group">
+                <!-- <h1> Ingresar Vehiculo<h1> -->
+                <h1 style="color: black" class="h3 mb-5 text-center"> Ingresar Vehiculo<h1>  
+                <h2 class="mt-5 text-center" style="color:hsl(50,100%,30%);"> Patente</h2>
+                <input class="form-control" name="Patente" autocomplete="off" class="navbar-brand">
+              </div>
+              <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
+            </form>
+
+            </div> 
+
+            <div class="col-sm-8 ml-5">
+              <table class="table table-hover table-dark">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table> 
+            </div>  
+        </div>
+
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">"El arte de estacionar".</span>
-      </div>
+    <footer>
+  
     </footer>
 
     <!-- Bootstrap core JavaScript
