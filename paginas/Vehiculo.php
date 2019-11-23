@@ -33,6 +33,14 @@ session_start();
                 <input class="form-control" name="Patente" autocomplete="off" type="text" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
               <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
+              <?php 
+                    if (isset($_GET['patenteExistente']))
+                    {
+                      echo '<p style="color:yellow">Patente registrada</p>';
+                      echo '<p style="color:white">Vehiculo actualmente estacionado</p>';
+                    }
+              ?>
+              
             </form>
 
             </div> 
@@ -42,9 +50,9 @@ session_start();
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">Patente</th>
+                    <th scope="col">Hora Ingreso</th>
+                    <th scope="col">Usuario</th>
                   </tr>
                 </thead>
                 <tbody>

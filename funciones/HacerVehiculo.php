@@ -13,6 +13,21 @@ session_start();
 	$miobjetoVehiculo->UsrRegistra = $_SESSION['Usuario'];
 
 	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+	$consulta =$objetoAccesoDato->RetornarConsulta("select patente from Vehiculos");
+	$consulta->execute();			
+	$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);	
+
+	foreach ($datos as $patente ) 
+	{
+		if ($patente['patente'] == $miobjetoVehiculo->Patente) 
+		{	
+			header("Location: ../paginas/Vehiculo.php?patenteExistente=error");
+			exit();
+		}			
+	}
+	
+
+	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
 	$select="INSERT INTO Vehiculos (patente, horario, usr_registra) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario','$miobjetoVehiculo->UsrRegistra')";
 	$consulta =$objetoAccesoDato->RetornarConsulta($select);
 	$consulta->execute();
