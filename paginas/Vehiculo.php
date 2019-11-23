@@ -12,7 +12,7 @@ session_start();
 
   </head>
 
-  <body>
+  <body background="../img/Fondo.png">
 
     <header>
       <?php
