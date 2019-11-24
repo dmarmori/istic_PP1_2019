@@ -57,12 +57,12 @@
 
 				//Envio datos Factrar.php para mostrar resltado en pantalla
 				//header("Location: /Marmori/Facturar.php?exito");
-				header("Location: /Marmori/paginas/Facturar.php?exito=exito&cobrar=".$ValorCobrar."&ingreso=".$vehiculosEstacionados["horario"]."&salida=".$SalidaHora);
+				header("Location: ../paginas/Facturar.php?exito=exito&cobrar=".$ValorCobrar."&ingreso=".$vehiculosEstacionados["horario"]."&salida=".$SalidaHora);
 				exit();
 			}
 			else
 			{
-				header("Location: /Marmori/paginas/Facturar.php?error");
+				header("Location: ../paginas/Facturar.php?error");
 			}
       	}
 
