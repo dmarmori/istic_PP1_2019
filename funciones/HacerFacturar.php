@@ -49,9 +49,9 @@
 
 				//Guardo datos de facturado en BD
 
-				$select="INSERT INTO Facturados (patente, horaIngreso, horaSalida, valorFacturado,usr_factura) VALUES ('$PatenteFact','$HorarioIniFact','$HorarioSalFact','$ValorCobrar','$UsrFactura')";
-				$consulta =$objetoAccesoDato->RetornarConsulta($select);
-				$consulta->execute();
+				$Insertar="INSERT INTO Facturados (patente, horaIngreso, horaSalida, valorFacturado,usr_factura) VALUES ('$PatenteFact','$HorarioIniFact','$HorarioSalFact','$ValorCobrar','$UsrFactura')";
+				$Insert =$objetoAccesoDato->RetornarConsulta($Insertar);
+				$Insert->execute();
 
 							
 
