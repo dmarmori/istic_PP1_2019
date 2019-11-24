@@ -48,7 +48,8 @@ session_start();
             <div class="col-sm-8 ml-5">
               <table class="table table-hover table-dark">
                 <thead>
-                  <tr>
+                  <h2 class="mb-5 text-center">Vehiculos estacionados</h2>
+                  <tr style="color:hsl(40,100%,60%);">
                     <th scope="col">#</th>
                     <th scope="col">Patente</th>
                     <th scope="col">Hora Ingreso</th>
@@ -56,25 +57,37 @@ session_start();
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
+
+                  <?php 
+
+                    date_default_timezone_set('America/Argentina/Buenos_Aires');
+
+                    include '../funciones/AccesoDatos.php';
+
+                    $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+                    $consulta =$objetoAccesoDato->RetornarConsulta("select * from Vehiculos");
+                    $consulta->execute();
+                    $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+                    $contador = 1;
+
+                    foreach ($datos as $Vehiculos) 
+                    {
+
+                      echo "<tr><th scope='row'>".$contador."</th>";
+                      echo "<td>".$Vehiculos['patente']."</td>";
+                      echo "<td>".date("d-m-y H:i",$Vehiculos['horario'])."</td>";
+                      echo "<td>".$Vehiculos['usr_registra']."</td></tr>";
+
+                      $contador++;
+                    }
+
+                    $contador = $contador - 1;
+                  ?>
+
                 </tbody>
               </table> 
+              <h3 class="mb-5 text-center" style="color: black">Se encuentran <?php echo "$contador"." vehiculos estacionados"?></h3>
             </div>  
         </div>
 
