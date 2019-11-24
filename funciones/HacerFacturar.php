@@ -53,7 +53,11 @@
 				$Insert =$objetoAccesoDato->RetornarConsulta($Insertar);
 				$Insert->execute();
 
-							
+				//Borro el registro de Vechivulos
+
+				$Delete="DELETE FROM Vehiculos WHERE patente = '$PatenteFact'";
+				$Borrar =$objetoAccesoDato->RetornarConsulta($Delete);
+				$Borrar->execute();							
 
 				//Envio datos Factrar.php para mostrar resltado en pantalla
 				//header("Location: /Marmori/Facturar.php?exito");
