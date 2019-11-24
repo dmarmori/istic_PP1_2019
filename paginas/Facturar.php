@@ -12,7 +12,7 @@ session_start();
     ?>
   </head>
 
-  <body>
+  <body background="../img/Fondo.png">
 
     <header>
       <?php
@@ -22,42 +22,92 @@ session_start();
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <center>
+
+      <div class="row justify-content-center">
+          <div class="form-group col-sm-3">
+
+            <form action="../funciones/HacerFacturar.php">
+              <div class="form-group">
+                <h1 style="color: black" class="h3 mb-5 text-center">Facturar Vehiculo<h1> 
+                <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);">Patente</h2>
+                <input class="form-control" autocomplete="off" class="navbar-brand" type="text" name="Patente" required onchange="javascript:this.value=this.value.toUpperCase();"/>
+              </div>
+              <input class="form-control btn btn-lg btn-warning" type="submit" value="Facturar">
+
+              <?php 
+                  date_default_timezone_set('America/Argentina/Buenos_Aires');
+                  if (isset($_GET['exito']))
+                  {        
+                      echo '<p style="color:yellow">Vehiculo facturado!</p>'; 
+                  }
+                 if (isset($_GET['cobrar'])) 
+                  { 
+                    $aPagar = $_GET['cobrar'];
+                    $ingreso = $_GET['ingreso'];
+                    $salida = $_GET['salida'];
+                    echo "<p style='color:white'>Fecha de ingreso: ".date("d-m-y H:i",$ingreso)."</p>";
+                    echo "<p style='color:white'>Fecha de egreso: ".date("d-m-y H:i",$salida)."</p>";
+                    echo "<p style='color:white'>Se facturo: $".$aPagar."</p><br>";
+                  }
+                  else if (isset($_GET['error'])) 
+                  {
+                    echo '<p style="color:yellow">Patente no encontrada, Intente nuevamente!</p>';  
+                  }
+              ?>
+
+            </form>
+
+            </div>
+
+            <div class="col-sm-6 ml-5">
+              <table class="table table-hover table-dark">
+                <thead>
+                  <h2 class="mb-5 text-center">Vehiculos estacionados</h2>
+                  <tr style="color:hsl(40,100%,60%);">
+                    <th scope="col">#</th>
+                    <th scope="col">Patente</th>
+                    <th scope="col">Hora Ingreso</th>
+                    <th scope="col">Usuario</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                <?php 
+
+                    date_default_timezone_set('America/Argentina/Buenos_Aires');
+
+                    include '../funciones/AccesoDatos.php';
+
+                    $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+                    $consulta =$objetoAccesoDato->RetornarConsulta("select * from Vehiculos");
+                    $consulta->execute();
+                    $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
+
+                    $contador = 1;
+
+                    foreach ($datos as $Vehiculos) 
+                    {
+
+                      echo "<tr><th scope='row'>".$contador."</th>";
+                      echo "<td>".$Vehiculos['patente']."</td>";
+                      echo "<td>".date("d-m-y H:i",$Vehiculos['horario'])."</td>";
+                      echo "<td>".$Vehiculos['usr_registra']."</td></tr>";
+
+                      $contador++;
+                    }
+
+                    $contador = $contador - 1;
+                  ?>
+
+                </tbody>
+              </table>
+              <h3 class="mb-5 text-center" style="color: black">Se encuentran <?php echo "$contador"." vehiculos estacionados"?></h3>
+            </div>  
+        </div>
       
-        
-        <form action="../funciones/HacerFacturar.php">
-                <h1>Patente</h1><br>
-                <input autocomplete="off" class="navbar-brand" type="text" name="Patente" value="" required>
-                <br><br>
-        <?php 
-        date_default_timezone_set('America/Argentina/Buenos_Aires');
-        if (isset($_GET['exito']))
-        {        
-            echo '<p style="color:green">Vehiculo facturado!</p>'; 
-        }
-       if (isset($_GET['cobrar'])) 
-        { 
-          $aPagar = $_GET['cobrar'];
-          $ingreso = $_GET['ingreso'];
-          $salida = $_GET['salida'];
-          echo "<p>Fecha de ingreso: ".date("Y-m-d h:i:sa",$ingreso)."</p><br>";
-          echo "<p>Fecha de salida: ".date("Y-m-d h:i:sa",$salida)."</p><br>";
-          echo "<p>Se facturo: $".$aPagar."</p><br>";
-        }
-        else if (isset($_GET['error'])) 
-        {
-          echo '<p style="color:red">Patente no encontrada, Intente nuevamente!</p>';  
-        }
-        ?>
-                <input class="navbar-brand" type="submit" value="Facturar">
-          </form> 
-      </center>
     </main>
 
-    <footer class="footer">
-      <div class="container">
-        <span class="text-muted">"El arte de estacionar".</span>
-      </div>
+    <footer>
     </footer>
 
     <!-- Bootstrap core JavaScript
