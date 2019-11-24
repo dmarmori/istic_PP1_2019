@@ -23,7 +23,7 @@
 			//$objetoPatente = $objetoVehiculo->Patente;
 			//$horaEntrada = $objetoVehiculo->Horario;
 
-			if ($vehiculosEstacionados["patente"] == $PatenteIngresada) 
+			if ($vehiculosEstacionados["Patente"] == $PatenteIngresada) 
 			{	
 				$diffSegundos = $SalidaHora - $vehiculosEstacionados["horario"];
 
