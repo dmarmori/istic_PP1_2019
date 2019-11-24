@@ -3,7 +3,7 @@
 	session_start();
 
 		$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-		$consulta =$objetoAccesoDato->RetornarConsulta("select patente,horario from vehiculos");
+		$consulta =$objetoAccesoDato->RetornarConsulta("select patente,horario from Vehiculos");
 		$consulta->execute();
 		$datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
 
@@ -12,7 +12,8 @@
 	$contadorF = 0;
 	
 	date_default_timezone_set('America/Argentina/Buenos_Aires');
-	$SalidaHora = mktime(); 
+	$SalidaHora = mktime();
+	$UsrFactura = $_SESSION['Usuario']; 
 
 	$PatenteIngresada = $_GET['Patente'];
 	
@@ -48,7 +49,7 @@
 
 				//Guardo datos de facturado en BD
 
-				$select="INSERT INTO facturados (patente, horaIngreso, horaSalida, valorFacturado) VALUES ('$PatenteFact','$HorarioIniFact','$HorarioSalFact','$ValorCobrar')";
+				$select="INSERT INTO facturados (patente, horaIngreso, horaSalida, valorFacturado,usr_factura) VALUES ('$PatenteFact','$HorarioIniFact','$HorarioSalFact','$ValorCobrar','$UsrFactura')";
 				$consulta =$objetoAccesoDato->RetornarConsulta($select);
 				$consulta->execute();
 
