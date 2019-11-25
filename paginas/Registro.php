@@ -19,12 +19,16 @@ session_start();
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
+    <main role="main" class="container mt-5">
+
+      <div class="row justify-content-center">
+
+        <div class="col-sm-4   mb-3 mt-4">
      
             <form action="../funciones/HacerRegistro.php" class="form-signin">
               <div class="text-center mb-4">
                 <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-                <h1 class="h3 mb-3 font-weight-normal">Registro de usuario</h1>
+                <h3 style="color: black" class="h3 mb-5 text-center">Registro de usuario</h3>
               </div> 
                 
                 
@@ -46,7 +50,9 @@ session_start();
                     }
                   ?>
                   
-              </form> 
+              </form>}
+        </div>
+      </div>   
 
     </main>
 
