@@ -21,12 +21,16 @@ session_start();
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
+    <main role="main" class="container mt-4">
 
       <h1 class="mt-5"style="color:hsl(40,100%,0%); padding-top: 100px"><em>Marmori Estacionamientos SA<em></h1>    
 
+      <div class="row justify-content-center">
+
+        <div class="col-sm-4   mb-3 mt-4">
+
             <form class="form-signin" action="../funciones/HacerLogin.php">
-                <h1 style="color: white" class="h3 mb-3 font-weight-normal">Ingrese sus datos</h1>
+                <h3 style="color: white" class="h3 mb-4 font-weight-normal">Ingrese sus datos</h3>
 
                 <label for="uname" class="sr-only">Usuario</label>
                 <input autocomplete="off" type="text" id="uname" name="Usuario"class="form-control" placeholder="usuario" required autofocus onchange="javascript:this.value=this.value.toUpperCase();"/>
@@ -56,6 +60,10 @@ session_start();
             
       
           </form>
+
+        </div>
+      </div>
+              
     </main>
 
     <footer>
