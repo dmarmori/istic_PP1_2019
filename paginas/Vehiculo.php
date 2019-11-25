@@ -11,7 +11,7 @@ session_start();
     ?>
   </head>
 
-  <body background="../img/Fondo.png">
+  <body class="bg-body">
 
     <header>
       <?php
@@ -20,16 +20,17 @@ session_start();
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
+    <main role="main" class="container mt-5">
 
         <div class="row justify-content-center">
-          <div class="form-group col-sm-3">
+
+          <div class="col-sm-3   mb-3">
            
             <form action="../funciones/HacerVehiculo.php">
               <div class="form-group">
                 <!-- <h1> Ingresar Vehiculo<h1> -->
-                <h1 style="color: black" class="h3 mb-5 text-center"> Ingresar Vehiculo<h1>  
-                <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);"> Patente</h2>
+                <h3 style="color: black" class="h3 mb-5 text-center">Ingresar Vehiculo<h3>  
+                    <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);"> Patente</h2>
                 <input class="form-control" name="Patente" autocomplete="off" type="text" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
               <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
@@ -41,11 +42,10 @@ session_start();
                     }
               ?>
               
-            </form>
+              </form>
+          </div> 
 
-            </div> 
-
-            <div class="col-sm-8 ml-5">
+            <div class="col-sm-6">
               <table class="table table-hover table-dark">
                 <thead>
                   <h2 class="mb-5 text-center">Vehiculos estacionados</h2>

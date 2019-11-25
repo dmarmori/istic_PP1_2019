@@ -1,0 +1,5 @@
+.bg-body{
+	background-image: url("../img/Fondo.png");
+	background-position: center;
+	background-size: cover;
+}
