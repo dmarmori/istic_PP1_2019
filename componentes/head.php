@@ -5,7 +5,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../img/IconoEsta.png" sizes="16x16" type="image/png">
 
-    <link rel="stylesheet" type="text/css" href="/Marmori/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 
     <!-- Bootstrap core CSS -->
     <link href="../../css/bootstrap.min.css" rel="stylesheet">
