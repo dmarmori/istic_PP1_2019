@@ -10,6 +10,6 @@
     <!-- Custom styles for this template -->
     <link href="../../css/sticky-footer-navbar.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="../../css/floating-labels.css" rel="stylesheet">
+    <!-- <link href="../../css/floating-labels.css" rel="stylesheet"> -->
   
     
