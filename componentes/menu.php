@@ -44,7 +44,7 @@
                     <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
+                    <a class="nav-link" href="../../paginas/ListaVehiculo.php">Lista Vehiculos</a>
                   </li>
                   <li class="nav-item active">
                   <a class="nav-link" href="../../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
