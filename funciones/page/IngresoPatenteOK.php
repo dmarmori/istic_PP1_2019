@@ -25,7 +25,7 @@ session_start();
       <center>
       <h1 class="mt-5"style="color:hsl(40,100%,0%);"><em>Ingreso de patente exitoso<em></h1>
       <img src="../../img/RegistroOk.png">
-      <h3><a href="../../paginas/Vehiculo.php">Seguir ingresando</a></h3>
+      <h3><a style="color:hsl(40,110%,0%);" href="../../paginas/Vehiculo.php">Seguir ingresando</a></h3>
       </center>
     </main>
 
