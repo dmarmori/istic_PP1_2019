@@ -22,7 +22,7 @@
                     <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="ListaVehiculo.php">Lista Vehiculos</a>
+                    <a class="nav-link" href="../../paginas/ListaVehiculo.php">Lista Vehiculos</a>
                   </li>
 
             <?php
