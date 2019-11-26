@@ -12,7 +12,7 @@ session_start();
     ?>
   </head>
 
-  <body background="../img/Fondo.png">
+  <body class="bg-body">
 
     <header>
       <?php
@@ -21,14 +21,15 @@ session_start();
     </header>
 
     <!-- Begin page content -->
-    <main role="main" class="container">
+    <main role="main" class="container mt-5">
 
       <div class="row justify-content-center">
-          <div class="form-group col-sm-3">
+
+          <div class="col-sm-3   mb-3">
 
             <form action="../funciones/HacerFacturar.php">
               <div class="form-group">
-                <h1 style="color: black" class="h3 mb-5 text-center">Facturar Vehiculo<h1> 
+                <h3 style="color: black" class="h3 mb-5 text-center">Facturar Vehiculo<h3> 
                 <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);">Patente</h2>
                 <input class="form-control" autocomplete="off" class="navbar-brand" type="text" name="Patente" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
@@ -57,9 +58,9 @@ session_start();
 
             </form>
 
-            </div>
+          </div>
 
-            <div class="col-sm-6 ml-5">
+            <div class="col-sm-6">
               <table class="table table-hover table-dark">
                 <thead>
                   <h2 class="mb-5 text-center">Vehiculos estacionados</h2>
