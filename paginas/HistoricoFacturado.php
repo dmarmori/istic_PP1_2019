@@ -52,6 +52,7 @@ session_start();
                     $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
 
                     $contador = 1;
+                    $acumula= 0;
 
                     foreach ($datos as $Facturados) 
                     {
@@ -67,11 +68,13 @@ session_start();
                     }
 
                     $contador = $contador - 1;
+                    $acumula = ($acumula + $Facturados['valorFacturado']);
                   ?>
 
                 </tbody>
               </table> 
-              <h3 class="mb-5 text-center" style="color: black">Se encuentran <?php echo "$contador"." vehiculos estacionados"?></h3>
+              <h3 class="mb-5 text-center" style="color: white">Vehiculos Facturados: <?php echo "$contador"?></h3>
+              <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$acumula"?></h1>
             </div>  
         </div>
 
