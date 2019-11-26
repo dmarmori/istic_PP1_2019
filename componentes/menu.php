@@ -50,7 +50,7 @@
                   <a class="nav-link" href="../../paginas/Registro.php">Registrar<span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="HistoricoEmpleados.php"> Historico Facturados</a>
+                    <a class="nav-link" href="../../paginas/HistoricoFacturado.php"> Historico Facturados</a>
                   </li>
               <?php
               }
