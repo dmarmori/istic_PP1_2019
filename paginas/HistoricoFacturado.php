@@ -74,7 +74,7 @@ session_start();
                 </tbody>
               </table> 
               <h3 class="mb-5 text-center" style="color: white">Vehiculos Facturados: <?php echo "$contador"?></h3>
-              <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$acumula"?></h1>
+              <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$"."$acumula"?></h1>
             </div>  
         </div>
 
