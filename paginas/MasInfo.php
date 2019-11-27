@@ -11,7 +11,7 @@
           H3 {color: yellow};  
   </style>
 
-  <body>
+  <body class="bg-body">
 
     <header>
      
