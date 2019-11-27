@@ -37,7 +37,7 @@ session_start();
               <?php 
                     if (isset($_GET['patenteExistente']))
                     {
-                      echo '<p sstyle="color:hsl(40,100%,60%);">Patente registrada</p>';
+                      echo '<p style="color:hsl(40,100%,60%);">Patente registrada</p>';
                       echo '<p style="color:hsl(50,100%,60%);">Vehiculo actualmente estacionado</p>';
                     }
                     if (isset($_GET['patenteNoOk']))
