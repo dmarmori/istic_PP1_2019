@@ -43,7 +43,7 @@ session_start();
                 <input type="checkbox" value="remember-me"> Recordarme
                 </label>
                 </div>
-                <button class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
+                <button class="btn btn-lg btn-warning btn-block" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/login.png">Ingresar</button>
                 <?php
                   if (isset($_GET['errorClave']))
                   {

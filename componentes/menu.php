@@ -91,7 +91,7 @@
               ?>
 
             aria-label="Search">
-            <button class="btn btn-warning my-2 my-sm-0" type="submit">Salir</button>
+            <button class="btn btn-warning my-2 my-sm-0" type="submit"><img class="pr-1" height="18px" width="18px" src="../../img/salir.png">Salir</button>
           </form>
         </div>
       </nav>

@@ -40,7 +40,7 @@ session_start();
                 </select><br /><br>
                 <input  type="password" class="form-control" placeholder="Ingrese Clave " name="Clave" required>
                 <br /><br>
-                <button  class="btn btn-lg btn-warning btn-block" type="submit">Ingresar</button>
+                <button  class="btn btn-lg btn-warning btn-block" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/usuario.png">Ingresar</button>
 
                 <?php 
                     if (isset($_GET['usuarioExistente']))

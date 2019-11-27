@@ -33,7 +33,7 @@ session_start();
                 <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);">Patente</h2>
                 <input class="form-control" autocomplete="off" class="navbar-brand" type="text" name="Patente" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
-              <input class="form-control btn btn-lg btn-warning" type="submit" value="Facturar">
+              <button  class="btn btn-lg btn-warning btn-block" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/facturar.png"> Facturar</button>
 
               <?php 
                   date_default_timezone_set('America/Argentina/Buenos_Aires');

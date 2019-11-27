@@ -33,7 +33,7 @@ session_start();
                     <h2 class="mt-5 text-center" style="color:hsl(40,100%,60%);"> Patente</h2>
                 <input class="form-control" name="Patente" autocomplete="off" type="text" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
               </div>
-              <input class="form-control btn btn-lg btn-warning" type="submit" value="Ingresar">
+              <button  class="btn btn-lg btn-warning btn-block" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/guardar.png"> Ingresar</button>
               <?php 
                     if (isset($_GET['patenteExistente']))
                     {
