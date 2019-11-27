@@ -26,7 +26,7 @@ session_start();
          
 
             <div class="col-sm-8">
-              <form action="HistoricoPorFecha.php">
+              <form action="/marmori/funciones/HacerVehiculo.php">
               <table class="table table-hover table-dark">
                 <thead>
                   <h1 class="mb-5 text-center">Vehiculos Facturados</h1>
