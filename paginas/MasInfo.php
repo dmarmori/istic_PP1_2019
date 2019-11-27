@@ -8,7 +8,7 @@
     ?>
   </head>
   <style> 
-          H3 {color:blue;}  
+          H3 {color: yellow};  
   </style>
 
   <body>
@@ -19,9 +19,9 @@
 
     <!-- Begin page content -->
     <main role="main" class="container">
-      <h1 class="mt-5"style="color:hsl(0,100%,50%);"><em>Marmori Estacionamientos SA<em></h1>
+      <h1 class="mt-5"style="color:hsl(40,100%,0%);"><em>Marmori Estacionamientos SA<em></h1>
       <center>
-      <p class="lead"><h2><u>Nuestras tarifas</u></h2></p>
+      <p class="lead"><h2 style="color:hsl(40,100%,0%);"><u>Nuestras tarifas</u></h2></p>
       </center>
       <img src="../img/auto.png"height=150” width=150”>
       <center>
