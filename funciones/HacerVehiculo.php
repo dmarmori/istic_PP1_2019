@@ -26,14 +26,55 @@ session_start();
 		}			
 	}
 	
+	$alpha6=substr($_GET['Patente'], 0,3);
+	$digit6 = substr($_GET['Patente'], 3,3);
+	$alpha17=substr($_GET['Patente'], 0,2);
+	$digit7=substr($_GET['Patente'], 2,3);
+	$alpha27=substr($_GET['Patente'], 5,2);
 
-	$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-	$select="INSERT INTO Vehiculos (patente, horario, usr_registra) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario','$miobjetoVehiculo->UsrRegistra')";
-	$consulta =$objetoAccesoDato->RetornarConsulta($select);
-	$consulta->execute();
+	if (strlen($_GET['Patente']) == 6)
+	{
+			if (ctype_alpha($alpha6) && ctype_digit($digit6)) 
+			{
+				$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+				$select="INSERT INTO Vehiculos (patente, horario, usr_registra) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario','$miobjetoVehiculo->UsrRegistra')";
+				$consulta =$objetoAccesoDato->RetornarConsulta($select);
+				$consulta->execute();
 
+				header("Location: page/IngresoPatenteOK.php");
+				exit();
+			}	
+			else
+			{
+			header("Location: ../paginas/Vehiculo.php?patenteNoOk=error");
+			exit();
+			}
+	}
+	else if (strlen($_GET['Patente']) == 7)
+		{
+			if (ctype_alpha($alpha17) && ctype_digit($digit7) && ctype_alpha($alpha27))
+			{
+				$objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
+				$select="INSERT INTO Vehiculos (patente, horario, usr_registra) VALUES ('$miobjetoVehiculo->Patente','$miobjetoVehiculo->Horario','$miobjetoVehiculo->UsrRegistra')";
+				$consulta =$objetoAccesoDato->RetornarConsulta($select);
+				$consulta->execute();
+
+				header("Location: page/IngresoPatenteOK.php");
+				exit();
+			}		
+			else
+			{
+				header("Location: ../paginas/Vehiculo.php?patenteNoOk=error");
+				exit();
+			}
+		}
+	else
+	{
+		header("Location: ../paginas/Vehiculo.php?patenteNoOk=error");
+		exit();
+	}
 	
 
-	header("Location: page/IngresoPatenteOK.php");
+	
 
 ?>	

@@ -37,9 +37,14 @@ session_start();
               <?php 
                     if (isset($_GET['patenteExistente']))
                     {
-                      echo '<p style="color:yellow">Patente registrada</p>';
-                      echo '<p style="color:white">Vehiculo actualmente estacionado</p>';
+                      echo '<p sstyle="color:hsl(40,100%,60%);">Patente registrada</p>';
+                      echo '<p style="color:hsl(50,100%,60%);">Vehiculo actualmente estacionado</p>';
                     }
+                    if (isset($_GET['patenteNoOk']))
+                    {
+                      echo '<p style="color:hsl(40,100%,60%);">ErrorPatente</p>';
+                      echo '<p style="color:hsl(50,100%,60%);">Formato incorrecto</p>';
+                      }
               ?>
               
               </form>
