@@ -67,10 +67,11 @@ session_start();
                       echo "<td>".$Facturados['usr_factura']."</td></tr>";
 
                       $contador++;
+                      $acumula = ($acumula + $Facturados['valorFacturado']);
                     }
 
                     $contador = $contador - 1;
-                    $acumula = ($acumula + $Facturados['valorFacturado']);
+                    
                   ?>
 
                 </tbody>
