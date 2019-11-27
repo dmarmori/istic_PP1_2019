@@ -57,7 +57,7 @@ session_start();
 
                       if ($Usuarios['habilitado'] == 0)
                       {
-                        echo "<td><button type='submit' name='habilitar' value='".$Usuarios['id']."' class='btn ml-4 btn-warning'><img class='pr-4' src='../img/icons8_ok_16px.png'>Habilitar</button></td></tr>";
+                        echo "<td><button type='submit' name='habilitar' value='".$Usuarios['id']."' class='btn ml-4 btn-secondary'><img class='pr-4' src='../img/icons8_ok_16px.png'>Habilitar</button></td></tr>";
                       } 
                       else
                       {
