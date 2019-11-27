@@ -41,7 +41,7 @@
                     <a  style="color:yellow"; class="nav-link" href="../../paginas/Facturar.php">$Facturar</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="ListaUsuario.php">Lista Users</a>
+                    <a class="nav-link" href="../../paginas/ListaUsuario.php">Lista Users</a>
                   </li>
                   <li class="nav-item active">
                     <a class="nav-link" href="../../paginas/ListaVehiculo.php">Lista Vehiculos</a>
