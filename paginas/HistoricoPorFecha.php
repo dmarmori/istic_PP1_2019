@@ -23,14 +23,24 @@ session_start();
     <main role="main" class="container mt-5">
 
         <div class="row justify-content-center">
-         
+            <form action="HistoricoPorFecha.php">
+                <div class="form-group">
+                  <h1 style="color: black" class="h1 mb-5 text-center">Ingrese fecha<h1> 
+                  <h3 style="color: black" class="text-center">desde<h3> 
+                  <input class="form-control" name="Fecha1" autocomplete="off" type="date" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
+                  <h3 style="color: black" class="text-center">hasta<h3> 
+                  <input class="form-control" name="Fecha2" autocomplete="off" type="date" class="navbar-brand" required onchange="javascript:this.value=this.value.toUpperCase();"/>
+                </div>  
+                  <button  class="btn btn-lg btn-warning btn-block" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/lupa.png">Buscar</button>
+              
+              </form> 
 
-            <div class="col-sm-8">
-              <form action="/marmori/funciones/HacerVehiculo.php">
+                     
+
+              <div class="col-sm-8">
               <table class="table table-hover table-dark">
                 <thead>
-                  <h1 class="mb-5 text-center">Vehiculos Facturados</h1>
-                  <button class="btn btn-lg btn-warning  mb-3 sm-3" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/lupa.png">Buscar por fecha</button> 
+                  <h2 class="mb-5 text-center">Vehiculos estacionados</h2>
                   <tr style="color:hsl(40,100%,60%);">
                     <th scope="col">#</th>
                     <th scope="col">Patente</th>
@@ -42,14 +52,47 @@ session_start();
                 </thead>
                 <tbody>
 
-                  <?php 
+              <?php 
+              error_reporting(0);
+                    // $Original1 = $_GET['Fecha1'];
+                    // $Original2 = $_GET['Fecha2'];
+
+                    // $newDate = date("d-m-y 00:01", strtotime($Original1));
+                    // $newDate2 = date("d-m-y 23:59", strtotime($Original2));
+
+                    // $newDat3=mktime($newDate);
+                    // $newDat4=mktime($newDate2);
+
+                    // list($day, $month, $year) = explode('-', $Original1);
+                    // echo mktime(0, 0, 0, $day, $month, $year);
+                    // list($day, $month, $year) = explode('-', $Original2);
+                    // echo mktime(0, 0, 0, $day, $month, $year);
+
+              // echo "- 1 ".$Original1;  
+              // echo "- 2 ".$Original2; 
+              // echo "- 3 ".$newDate;  
+              // echo "- 4 ".$newDate2;   
+              // echo "- 5 ".$newDat3;  
+              // echo "- 6 ".$newDat4;
+              // echo "-orueba".mktime(0, 0, 0, $newDate);
+              
+
 
                     date_default_timezone_set('America/Argentina/Buenos_Aires');
 
                     include '../funciones/AccesoDatos.php';
 
+                    $Original1 = $_GET['Fecha1'];
+                    $Original2 = $_GET['Fecha2'];
+
+                    $newDate = date("d-m-y 00:01", strtotime($Original1));
+                    $newDate2 = date("d-m-y 23:59", strtotime($Original2));
+
+                    $Fecha1=mktime($newDate);
+                    $Fecha2=mktime($newDate2);
+
                     $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso(); 
-                    $consulta =$objetoAccesoDato->RetornarConsulta("select * from Facturados");
+                    $consulta =$objetoAccesoDato->RetornarConsulta("select * from Facturados where horaSalida >= '$Fecha1' and horaSalida <= '$Fecha2'");
                     $consulta->execute();
                     $datos= $consulta->fetchAll(PDO::FETCH_ASSOC);
 
@@ -71,16 +114,18 @@ session_start();
                     }
 
                     $contador = $contador - 1;
-                    
-                  ?>
 
-                </tbody>
-              </table> 
-              <h3 class="mb-5 text-center" style="color: white">Vehiculos Facturados: <?php echo "$contador"?></h3>
-              <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$"."$acumula"?></h1>
-            </form>
-            </div>  
-        </div>
+
+              ?>
+              </tbody>
+          </table>
+           
+              
+          </div>
+      </div>
+
+
+
 
     </main>
 
