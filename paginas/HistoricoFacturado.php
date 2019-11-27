@@ -26,9 +26,11 @@ session_start();
          
 
             <div class="col-sm-8">
+              <form action="/marmori/funciones/HacerVehiculo.php">
               <table class="table table-hover table-dark">
                 <thead>
-                  <h2 class="mb-5 text-center">Vehiculos Facturados</h2>
+                  <h1 class="mb-5 text-center">Vehiculos Facturados</h1>
+                  <button class="btn btn-lg btn-warning  mb-3 sm-3" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/lupa.png">Buscar por fecha</button> 
                   <tr style="color:hsl(40,100%,60%);">
                     <th scope="col">#</th>
                     <th scope="col">Patente</th>
@@ -75,6 +77,7 @@ session_start();
               </table> 
               <h3 class="mb-5 text-center" style="color: white">Vehiculos Facturados: <?php echo "$contador"?></h3>
               <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$"."$acumula"?></h1>
+            </form>
             </div>  
         </div>
 
