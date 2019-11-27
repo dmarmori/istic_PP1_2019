@@ -54,19 +54,19 @@ session_start();
 
               <?php 
               error_reporting(0);
-                    // $Original1 = $_GET['Fecha1'];
-                    // $Original2 = $_GET['Fecha2'];
+              //       $Original1 = $_GET['Fecha1'];
+              //       $Original2 = $_GET['Fecha2'];
 
-                    // $newDate = date("d-m-y 00:01", strtotime($Original1));
-                    // $newDate2 = date("d-m-y 23:59", strtotime($Original2));
+              //       $newDate = date("d-m-y 00:01", strtotime($Original1));
+              //       $newDate2 = date("d-m-y 23:59", strtotime($Original2));
 
-                    // $newDat3=mktime($newDate);
-                    // $newDat4=mktime($newDate2);
+              //       $newDat3=mktime($newDate);
+              //       $newDat4=mktime($newDate2);
 
-                    // list($day, $month, $year) = explode('-', $Original1);
-                    // echo mktime(0, 0, 0, $day, $month, $year);
-                    // list($day, $month, $year) = explode('-', $Original2);
-                    // echo mktime(0, 0, 0, $day, $month, $year);
+              //       list($day, $month, $year) = explode('-', $Original1);
+              //       echo mktime(0, 0, 0, $day, $month, $year);
+              //       list($day, $month, $year) = explode('-', $Original2);
+              //       echo mktime(0, 0, 0, $day, $month, $year);
 
               // echo "- 1 ".$Original1;  
               // echo "- 2 ".$Original2; 
