@@ -79,6 +79,11 @@ session_start();
               <h3 class="mb-5 text-center" style="color: white">Vehiculos Facturados: <?php echo "$contador"?></h3>
               <h1 class="mb-5 text-center" style="color: yellow">Valor Total: <?php echo "$"."$acumula"?></h1>
             </form>
+
+              <form action="../funciones/DescargarHistorico.php"> 
+                  <button class="btn btn-lg btn-warning  mb-3 sm-3" type="submit"><img class="pr-1" height="30px" width="30px" src="../img/descargas.png">Descargar</button>
+              </form>
+              
             </div>  
         </div>
 
